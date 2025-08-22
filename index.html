@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strong Password Generator - Secure & Reliable</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>🔐 StrongPass</h1>
+                </div>
+                <nav class="nav">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#generator" class="nav-link">Generator</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#tech-stack" class="nav-link">Tech Stack</a>
+                    <a href="#faq" class="nav-link">FAQ</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="cs-topper">Welcome to StrongPass</span>
+                <h1 class="cs-title">Generate Unbreakable Passwords</h1>
+                <p class="cs-text">Create strong, secure passwords that protect your digital life. Our advanced algorithm ensures maximum security with every generated password.</p>
+                <a href="#generator" class="cs-button-solid">Generate Password</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Password Generator Section -->
+    <section id="generator" class="generator-section">
+        <div class="container">
+            <div class="generator-content">
+                <span class="cs-topper">Password Generator</span>
+                <h2 class="cs-title">Create Your Secure Password</h2>
+                <p class="cs-text">Customize your password settings and generate a strong, secure password instantly.</p>
+                
+                <div class="generator-form">
+                    <div class="form-group">
+                        <label for="password-length">Password Length:</label>
+                        <input type="range" id="password-length" min="12" max="64" value="16" class="length-slider">
+                        <span class="length-value">16</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="uppercase" checked>
+                            <span class="checkmark"></span>
+                            Include Uppercase Letters (A-Z)
+                        </label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="lowercase" checked>
+                            <span class="checkmark"></span>
+                            Include Lowercase Letters (a-z)
+                        </label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="numbers" checked>
+                            <span class="checkmark"></span>
+                            Include Numbers (0-9)
+                        </label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="symbols" checked>
+                            <span class="checkmark"></span>
+                            Include Special Symbols (!@#$%^&*)
+                        </label>
+                    </div>
+                    
+                    <div class="button-container">
+                        <button id="generate-btn" class="cs-button-solid">Generate Password</button>
+                    </div>
+                </div>
+                
+                <div class="password-result">
+                    <div class="password-display">
+                        <input type="text" id="generated-password" readonly placeholder="Your password will appear here">
+                        <button id="copy-btn" class="copy-btn">📋 Copy</button>
+                    </div>
+                    <div class="password-strength">
+                        <div class="strength-bar">
+                            <div class="strength-fill" id="strength-fill"></div>
+                        </div>
+                        <span class="strength-text" id="strength-text">Strength: Strong</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <span class="cs-topper">About Me</span>
+                <h2 class="cs-title">Noah Khomer</h2>
+                <p class="cs-text">I'm a passionate developer who believes in the importance of digital security. This password generator was created to help people protect their online accounts with strong, secure passwords. With the increasing number of data breaches and cyber attacks, having a strong password is more important than ever.</p>
+                <div class="contact-info">
+                    <a href="https://www.linkedin.com/in/noah-khomer-19a935342/" class="contact-link" target="_blank">💼 LinkedIn Profile</a>
+                    <a href="https://github.com/noahkhomer18" class="contact-link" target="_blank">🐙 GitHub Profile</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech-stack" class="tech-section">
+        <div class="container">
+            <div class="tech-content">
+                <span class="cs-topper">Technology Stack</span>
+                <h2 class="cs-title">Built With Modern Technologies</h2>
+                <p class="cs-text">This project showcases the power of combining multiple technologies to create a secure and user-friendly application.</p>
+                
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <div class="tech-icon">🐍</div>
+                        <h3>Python</h3>
+                        <p>Core password generation algorithm and backend logic</p>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">🌐</div>
+                        <h3>HTML5</h3>
+                        <p>Semantic markup and modern web structure</p>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">🎨</div>
+                        <h3>CSS3</h3>
+                        <p>Responsive design and beautiful styling</p>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">⚡</div>
+                        <h3>JavaScript</h3>
+                        <p>Interactive features and dynamic functionality</p>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">🔒</div>
+                        <h3>Security</h3>
+                        <p>Cryptographically secure random generation</p>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon">📱</div>
+                        <h3>Responsive</h3>
+                        <p>Works perfectly on all devices</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="cs-content">
+                <span class="cs-topper">Frequently Asked Questions</span>
+                <h2 class="cs-title">Why Strong Passwords Matter</h2>
+                <p class="cs-text">Learn about password security and how to protect yourself from data breaches.</p>
+            </div>
+            <div class="cs-flex-group">
+                <ul class="cs-faq-group">
+                    <li class="cs-faq-item active">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Why should I use a strong password?
+                            </span>
+                        </button>
+                        <p class="cs-item-text">
+                            Strong passwords are your first line of defense against hackers, data breaches, and identity theft. Weak passwords can be cracked in seconds, while strong passwords can take years or even decades to break, even with powerful computers.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What makes a password strong?
+                            </span>
+                        </button>
+                        <p class="cs-item-text">
+                            A strong password should be at least 12 characters long and include a mix of uppercase letters, lowercase letters, numbers, and special symbols. It should avoid common words, personal information, and predictable patterns.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How do data breaches happen?
+                            </span>
+                        </button>
+                        <p class="cs-item-text">
+                            Data breaches occur when hackers gain unauthorized access to databases containing user information. This can happen through weak passwords, phishing attacks, software vulnerabilities, or insider threats. Once breached, hackers can access accounts, steal personal information, or sell credentials on the dark web.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Should I use different passwords for each account?
+                            </span>
+                        </button>
+                        <p class="cs-item-text">
+                            Absolutely! Using the same password across multiple accounts is extremely risky. If one account is compromised, hackers can access all your other accounts. Each account should have a unique, strong password to minimize the impact of a potential breach.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How often should I change my passwords?
+                            </span>
+                        </button>
+                        <p class="cs-item-text">
+                            It's recommended to change passwords every 3-6 months, especially for important accounts like banking, email, and work accounts. However, if you suspect a breach or receive a security notification, change your password immediately.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Can I trust this password generator?
+                            </span>
+                        </button>
+                        <p class="cs-item-text">
+                            Yes! This generator uses Python's cryptographically secure random number generator and runs entirely in your browser. No passwords are stored, transmitted, or logged. Each password is generated locally on your device for maximum security.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 StrongPass Generator. Built with ❤️ by Noah Khomer</p>
+                <p>This project is licensed under the MIT License</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
